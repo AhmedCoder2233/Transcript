@@ -51,7 +51,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-genai.configure(api_key="AIzaSyA88oZBMR3T_ZROvjr8xgkPuRD4AP58JpM")
+genai.configure(api_key="AIzaSyBZBe51XfpJ37KsbqYRk-ZT-B88vB3M-KI")
 model = genai.GenerativeModel("gemini-1.5-pro-latest")
 
 def video_id_changer(url):
