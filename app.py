@@ -79,6 +79,17 @@ def Transcript(link):
         else:
             st.error(f"❌ Error: {e}")
 
+    summary_text = summurize_text.text
+    if summary_text:
+        st.download_button(
+            label="Download Summary",
+            data=summary_text,
+            file_name="summary.txt",
+            mime="text/plain"
+        )
+    else:
+        st.error("❌ No summary available to download.")
+
 st.title("🎬 YouTube Video Summarizer")
 videoLink = st.text_input("🔗 Enter YouTube Video URL")
 
